@@ -37,4 +37,4 @@ time hdparm --user-master u --security-erase $pw $disk
 hdparm -I $disk
 
 # remove hdd/ssd from system
-echo 1 | sudo tee /sys/block/$1/device/delete
+echo 1 | sudo tee /sys/block/${device}/device/delete
