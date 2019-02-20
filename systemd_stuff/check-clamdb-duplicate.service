@@ -1,0 +1,9 @@
+[Unit]
+Description=check for clamav database duplicate
+
+[Service]
+Type=simple
+ExecStart=<PATH_TO_check_clam_db.py>/check_clam_db.py
+
+[Install]
+WantedBy=multi-user.target
